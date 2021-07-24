@@ -1,0 +1,21 @@
+.slogan-section {
+  padding: 88px 0;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  background: url("../images/qt-bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slogan-section .slogan {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.slogan-section .author {
+  font-size: 28px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=slogan.css.map */

@@ -1,0 +1,105 @@
+.contact {
+  padding: 30px 0;
+  background-color: #d65106;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.contact .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.contact .contact-item i.icon-main {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  color: #d65106;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.1rem;
+  margin-right: 15px;
+}
+
+.contact .contact-item i.icon {
+  font-size: 5rem;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.contact .contact-item .contact-info {
+  display: inline-block;
+}
+
+.contact .contact-item .contact-info .type {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact .contact-item .contact-info .info {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact .contact-item i.icon-main {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  .contact .contact-item .contact-info .type {
+    font-size: 18px;
+  }
+  .contact .contact-item .contact-info .info {
+    font-size: 16px;
+  }
+  .contact .contact-item i.icon {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contact .contact-item i.icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding: 20px 0;
+  }
+  .contact .contact-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .contact .contact-item.bug-item {
+    margin-left: -18px;
+  }
+  .contact .row:last-child .contact-item {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .contact {
+    display: none;
+  }
+  .contact * {
+    display: none;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

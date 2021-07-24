@@ -1,0 +1,62 @@
+@import "./sass/vaiables.scss";
+
+@import "./sass/mixin/mixin.scss"; // base
+@import "./sass/base.scss";
+
+@import "./sass/Header/Header.scss";
+@import "./sass/PageTitle/PageTitle.scss";
+@import "./sass/Slider/slider.scss";
+
+@import "./sass/About/about.scss";
+@import "./sass/Slogan/slogan.scss";
+@import "./sass/Menu/menu.scss";
+@import "./sass/Gallery/gallery.scss";
+@import "./sass/CustomerReview/review.scss";
+@import "./sass/Contact/contact.scss";
+@import "./sass/Footer/footer.scss";
+@import "./sass/Stuff/stuff.scss";
+@import "./sass/Blog/blog.scss";
+@import "./sass/ContactPage/contactpage.scss";
+@import "./sass/Reservation/Reservation.scss";
+
+.overlay {
+  @include Overlay(fixed, rgba($color: #000000, $alpha: 0.6));
+  z-index: 100000000;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+.overlay.open {
+  display: block;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.back-to-top {
+  padding: 6px 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: $mainColor;
+  font-size: 24px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 999;
+  cursor: pointer;
+  transition: border-radius 0.3s ease-in-out;
+  border: 2px solid $mainColor;
+  &:hover {
+    border-radius: 100px;
+    background-color: $mainColor;
+    color: #fff;
+  }
+}

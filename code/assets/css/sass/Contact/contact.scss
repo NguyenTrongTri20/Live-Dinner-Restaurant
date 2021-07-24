@@ -1,0 +1,104 @@
+@import "../vaiables.scss";
+
+.contact {
+  padding: 30px 0;
+  background-color: $mainColor;
+  border-radius: 100px;
+  color: #fff;
+  .contact-item {
+    display: flex;
+    position: relative;
+    i.icon-main {
+      width: 60px;
+      height: 60px;
+      background-color: $mainBackground;
+      color: $mainColor;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.1rem;
+      margin-right: 15px;
+    }
+    i.icon {
+      font-size: 5rem;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+
+    .contact-info {
+      display: inline-block;
+      .type {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .info {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1024px) {
+  .contact {
+    .contact-item {
+      i.icon-main {
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        margin-left: 10px;
+      }
+      .contact-info {
+        .type {
+          font-size: 18px;
+        }
+        .info {
+          font-size: 16px;
+        }
+      }
+      i.icon {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:992px) {
+  .contact {
+    .contact-item {
+      i.icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .contact {
+    padding: 20px 0;
+
+    .contact-item {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .contact-item.bug-item {
+      margin-left: -18px;
+    }
+
+    .row:last-child {
+      .contact-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media only screen and(max-width: 569px) {
+  .contact {
+    display: none;
+    * {
+      display: none;
+    }
+  }
+}

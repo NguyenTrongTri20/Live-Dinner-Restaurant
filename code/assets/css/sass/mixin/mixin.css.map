@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "mixin.scss",
+        "../vaiables.scss"
+    ],
+    "names": [],
+    "file": "mixin.css"
+}

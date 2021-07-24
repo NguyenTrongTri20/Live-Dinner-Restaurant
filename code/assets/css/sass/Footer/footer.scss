@@ -1,0 +1,128 @@
+@import "../vaiables.scss";
+@import "../mixin/mixin.scss";
+
+footer {
+  padding-top: 50px;
+
+  background-image: url("../images/footer-bg.jpg");
+  background-attachment: scroll;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+
+  &::before {
+    background-color: #010101;
+    content: "";
+    height: 322px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+  }
+  * {
+    z-index: 1;
+  }
+  .title {
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(207, 166, 113, 0.5);
+    color: #fff;
+    font-weight: 500;
+  }
+  .content {
+    font-size: 15px;
+    color: rgba($color: #fff, $alpha: 0.8);
+    line-height: 1.8;
+    padding-bottom: 10px;
+  }
+  .content.lg-size {
+    font-size: 18px;
+  }
+
+  a.content {
+    text-decoration: none;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  .form > input {
+    border: 1px solid #fff;
+    width: 100%;
+    background-color: #000;
+    padding: 17px 10px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .form > button {
+    @include Button($mainColor, #fff);
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .social-list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    a {
+      display: inline-block;
+      background-color: $mainBackground;
+      border-radius: 5px;
+      width: 38px;
+      height: 38px;
+      position: relative;
+      color: $mainColor;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .content.lg-size {
+    display: block;
+  }
+  .copyright {
+    padding: 30px 0;
+    margin-top: 20px;
+    background-color: #000;
+    color: rgba($color: #fff, $alpha: 0.8);
+    border-top: 2px solid rgba(207, 166, 113, 0.5);
+    font-size: 16px;
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  footer::before {
+    height: 343.6px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  footer::before {
+    height: 559.6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer::before {
+    height: 90%;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../vaiables.scss";
+@import "../mixin/mixin.scss";
+
+.about-section {
+  padding: 70px 0;
+  font-family: "Rubik", sans-serif;
+  background: #fff url("../images/about-bg.jpg") no-repeat bottom center;
+  .about-title {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    .hightlight {
+      color: $mainColor;
+    }
+  }
+  .about-sub-title {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .about-content {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+  .btn {
+    @include Button($mainColor, #fff);
+    margin-bottom: 40px;
+  }
+  .about-img-full {
+    width: 95%;
+    box-shadow: 20px 20px 0px $mainColor;
+  }
+}

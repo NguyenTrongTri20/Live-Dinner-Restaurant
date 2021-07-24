@@ -1,0 +1,60 @@
+@import "../vaiables.scss";
+@import "../mixin/mixin.scss";
+
+.blog {
+  .blog-info {
+    background-color: #fff;
+    text-align: left;
+    padding: 30px 25px;
+    border: 1px solid #ccc;
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.9);
+    }
+    .blog-title {
+      font-size: 2rem;
+      padding-bottom: 14px;
+      font-weight: 600;
+    }
+    .author-info {
+      font-size: 1.7rem;
+      color: $mainColor;
+      cursor: pointer;
+      .name,
+      .time {
+        display: inline-block;
+        &:hover {
+          color: #000;
+        }
+      }
+      .name {
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+      }
+      .time {
+        padding-left: 10px;
+      }
+    }
+    .blog-content {
+      font-size: 1.5rem;
+      color: #666;
+      padding-top: 14px;
+    }
+    .blog-button {
+      @include Button($mainColor, #fff);
+      margin-top: 40px;
+      width: 158px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .blog {
+    .blog-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

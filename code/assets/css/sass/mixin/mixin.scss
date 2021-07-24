@@ -1,0 +1,24 @@
+@import "../vaiables.scss";
+
+@mixin Button($bgc: $mainColor, $color: #000) {
+  background-color: $bgc;
+  color: $color !important;
+  padding: 13px 31px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: #000 !important;
+  }
+}
+
+@mixin Overlay($position, $color) {
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color;
+  z-index: 100;
+}

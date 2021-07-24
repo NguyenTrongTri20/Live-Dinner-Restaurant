@@ -1,0 +1,91 @@
+.slider {
+  position: relative;
+}
+
+.slider .carousel-item {
+  height: 800px;
+  position: relative;
+}
+
+.slider .carousel-item img {
+  position: absolute;
+  top: -126px;
+  left: 0px;
+  width: 1520px;
+  overflow: hidden;
+}
+
+.slider .overlay-slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.slider .banner-text {
+  position: absolute;
+  top: 180px;
+  color: #fff;
+  z-index: 1001;
+  font-family: "Rubik", sans-serif;
+}
+
+.slider .banner-text .banner-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.slider .banner-text .banner-sub-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.slider .banner-text .btn {
+  background-color: #d65106;
+  color: #fff !important;
+  padding: 13px 31px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.slider .banner-text .btn:hover {
+  background-color: #000 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .slider .carousel-item img {
+    left: -380px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider .carousel-item img {
+    left: -320px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1295px) {
+  .slider .carousel-item img {
+    left: -160px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .slider .carousel-item img {
+    left: -550px;
+  }
+}
+/*# sourceMappingURL=slider.css.map */

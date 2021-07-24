@@ -1,0 +1,57 @@
+.reservation-form .form-title {
+  text-align: left;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.reservation-form .date-picker,
+.reservation-form .custom-select,
+.reservation-form .form-input-text {
+  font-size: 1.6rem;
+  padding: 10px 16px;
+}
+
+.reservation-form .date-picker {
+  width: 100%;
+  outline: none;
+}
+
+.reservation-form .custom-select,
+.reservation-form .form-input-text + .invalid-feedback + .form-input-text {
+  margin-top: 20px;
+}
+
+.reservation-form .form-submit-btn {
+  background-color: #fff;
+  color: #d65106 !important;
+  padding: 13px 31px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d65106;
+  font-weight: 700;
+  margin-top: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.reservation-form .form-submit-btn:hover {
+  background-color: #000 !important;
+}
+
+.reservation-form .form-submit-btn:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #333;
+}
+
+.reservation-form .invalid-feedback,
+.reservation-form .valid-feedback {
+  text-align: left;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=Reservation.css.map */

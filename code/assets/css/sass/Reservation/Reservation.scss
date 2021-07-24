@@ -1,0 +1,45 @@
+@import "../vaiables.scss";
+@import "../mixin/mixin.scss";
+
+.reservation-form {
+  .form-title {
+    text-align: left;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .date-picker,
+  .custom-select,
+  .form-input-text {
+    font-size: 1.6rem;
+    padding: 10px 16px;
+  }
+  .date-picker {
+    width: 100%;
+    outline: none;
+  }
+  .custom-select,
+  .form-input-text + .invalid-feedback + .form-input-text {
+    margin-top: 20px;
+  }
+  .form-submit-btn {
+    @include Button(#fff, $mainColor);
+    background-color: #fff;
+    border: 1px solid $mainColor;
+    font-weight: 700;
+    margin-top: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &:hover {
+      background-color: #333 !important;
+      color: #fff !important;
+      border-color: #333;
+    }
+  }
+  .invalid-feedback,
+  .valid-feedback {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}

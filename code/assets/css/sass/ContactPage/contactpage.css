@@ -1,0 +1,38 @@
+form.form-contact .form-control {
+  font-size: 1.6rem;
+  padding: 10px 16px;
+  line-height: 1.5;
+}
+
+form.form-contact .form-submit-btn {
+  background-color: #fff;
+  color: #d65106 !important;
+  padding: 13px 31px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d65106;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+form.form-contact .form-submit-btn:hover {
+  background-color: #000 !important;
+}
+
+form.form-contact .form-submit-btn:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #333;
+}
+
+form.form-contact .valid-feedback,
+form.form-contact .invalid-feedback {
+  text-align: left;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=contactpage.css.map */
